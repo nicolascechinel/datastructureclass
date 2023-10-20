@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /home/nicolas/Documentos/datastructureclass/T3/main.cpp \
+ /home/nico/dev/UFSC/datastructureclass/T3/main.cpp \
  /usr/include/stdc-predef.h /usr/local/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -266,9 +266,9 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/local/include/gtest/gtest_prod.h \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
- /home/nicolas/Documentos/datastructureclass/T3/MinhaArvoreAVL.h \
- /home/nicolas/Documentos/datastructureclass/T3/ArvoreBinariaDeBusca.h \
- /home/nicolas/Documentos/datastructureclass/T3/MinhaListaEncadeada.h \
- /home/nicolas/Documentos/datastructureclass/T3/Elemento.h \
- /home/nicolas/Documentos/datastructureclass/T3/ListaEncadeadaAbstrata.h \
- /home/nicolas/Documentos/datastructureclass/T3/excecoes.h
+ /home/nico/dev/UFSC/datastructureclass/T3/MinhaArvoreAVL.h \
+ /home/nico/dev/UFSC/datastructureclass/T3/ArvoreBinariaDeBusca.h \
+ /home/nico/dev/UFSC/datastructureclass/T3/MinhaListaEncadeada.h \
+ /home/nico/dev/UFSC/datastructureclass/T3/Elemento.h \
+ /home/nico/dev/UFSC/datastructureclass/T3/ListaEncadeadaAbstrata.h \
+ /home/nico/dev/UFSC/datastructureclass/T3/excecoes.h

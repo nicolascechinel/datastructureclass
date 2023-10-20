@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/nicolas/Documentos/datastructureclass/T3/build"
+			"value" : "/home/nico/dev/UFSC/datastructureclass/T3/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -190,8 +190,8 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "/usr/bin/c++"
+			"type" : "STRING",
+			"value" : "/usr/bin/g++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -315,11 +315,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-12"
+			"type" : "STRING",
+			"value" : "/usr/bin/gcc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -335,7 +335,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-12"
+			"value" : "/usr/bin/gcc-ar-11"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -351,7 +351,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-12"
+			"value" : "/usr/bin/gcc-ranlib-11"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/nicolas/Documentos/datastructureclass/T3"
+			"value" : "/home/nico/dev/UFSC/datastructureclass/T3"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -2151,7 +2151,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "nicolas-Aspire-A515-51G"
+			"value" : "nico-MS-7D38"
 		},
 		{
 			"name" : "SVNCOMMAND",
@@ -2191,7 +2191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/nicolas/Documentos/datastructureclass/T3/build"
+			"value" : "/home/nico/dev/UFSC/datastructureclass/T3/build"
 		},
 		{
 			"name" : "dec0006_IS_TOP_LEVEL",
@@ -2215,7 +2215,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/nicolas/Documentos/datastructureclass/T3"
+			"value" : "/home/nico/dev/UFSC/datastructureclass/T3"
 		},
 		{
 			"name" : "pkgcfg_lib_GTEST_gtest",

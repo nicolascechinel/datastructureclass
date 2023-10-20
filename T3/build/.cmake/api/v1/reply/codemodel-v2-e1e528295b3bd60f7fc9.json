@@ -301,8 +301,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/nicolas/Documentos/datastructureclass/T3/build",
-		"source" : "/home/nicolas/Documentos/datastructureclass/T3"
+		"build" : "/home/nico/dev/UFSC/datastructureclass/T3/build",
+		"source" : "/home/nico/dev/UFSC/datastructureclass/T3"
 	},
 	"version" : 
 	{
