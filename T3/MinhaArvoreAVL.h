@@ -49,7 +49,7 @@ public:
     */
     virtual std::optional<int> altura(T chave) const
     {
-        return alturaRecursiva(raiz, chave);
+        return altura__(raiz, chave);
     }
 
     /**
@@ -160,8 +160,8 @@ public:
             return contemRecursivo(nodo->filhoDireita, chave);
         }
     }
-    //Altura recursiva
-    std::optional<int> alturaRecursiva(Nodo<T>* nodo, T chave) const
+    //Altura 
+    std::optional<int> altura__(Nodo<T>* nodo, T chave) const
     {
         Nodo<T>* objetivo = buscarNodo(nodo, chave);
         if (objetivo)
@@ -238,7 +238,7 @@ public:
             {
                 return rotacaoEsquerda(nodo);
             }
-            else
+            else // dupla rotacao direita esquerda
             {
                 nodo->filhoDireita = rotacaoDireita(nodo->filhoDireita);
                 return rotacaoEsquerda(nodo);
@@ -265,7 +265,7 @@ public:
         }
         else
         {
-            if (nodo->filhoEsquerda == nullptr || nodo->filhoDireita == nullptr)
+            if (nodo->filhoEsquerda == nullptr || nodo->filhoDireita == nullptr) 
             {
                 Nodo<T>* temp = (nodo->filhoEsquerda) ? nodo->filhoEsquerda : nodo->filhoDireita;
 
@@ -281,7 +281,7 @@ public:
 
                 delete temp;
             }
-            else
+            else 
             {
                 Nodo<T>* temp = menorNodo(nodo->filhoDireita);
                 nodo->chave = temp->chave;
@@ -299,28 +299,28 @@ public:
 
         int balanca = balanceado(nodo);
 
-        // ESquerda mais pesada 
+        // Esquerda mais pesada 
         if (balanca > 1)
         {
             if (balanceado(nodo->filhoEsquerda) >= 0)
             {
                 return rotacaoDireita(nodo);
             }
-            else
+            else // Esquerda direita
             {
                 nodo->filhoEsquerda = rotacaoEsquerda(nodo->filhoEsquerda);
                 return rotacaoDireita(nodo);
             }
         }
 
-        // DIreita mais pesadaa
+        // Ddreita mais pesadaa
         if (balanca < -1)
         {
             if (balanceado(nodo->filhoDireita) <= 0)
             {
                 return rotacaoEsquerda(nodo);
             }
-            else
+            else // Direita esquerda
             {
                 nodo->filhoDireita = rotacaoDireita(nodo->filhoDireita);
                 return rotacaoEsquerda(nodo);
@@ -330,12 +330,12 @@ public:
         return nodo;
     }
 
-    //Funcao auxiliar para pegar a altura de um nodo
+    //Funcao auxiliar para pegar a altura = -1 convencao
     int alturaNodo(Nodo<T>* nodo) const
     {
         if (nodo == nullptr)
         {
-            return 0;
+            return -1;
         }
         return nodo->altura;
     }
@@ -362,26 +362,28 @@ public:
 
     Nodo<T>* rotacaoEsquerda(Nodo<T>* nodo)
     {
-        Nodo<T>* novoRaiz = nodo->filhoDireita;
-        Nodo<T>* tmp = novoRaiz->filhoEsquerda;
-        novoRaiz->filhoEsquerda = nodo;
-        nodo->filhoDireita = tmp;
+        //TODO VERIFICAR SE ESTA CERTO
+        Nodo<T>* novoRaiz = nodo->filhoDireita; // novo nodo raiz 
+        Nodo<T>* tmp = novoRaiz->filhoEsquerda; // subarvore esquerda da nova raiz
+        novoRaiz->filhoEsquerda = nodo; // nodo vira filho esquerda da nova raiz
+        nodo->filhoDireita = tmp; // subarvore esquerda da nova raiz vira filho direita do nodo
 
-        nodo->altura = 1 + std::max(alturaNodo(nodo->filhoEsquerda), alturaNodo(nodo->filhoDireita));
-        novoRaiz->altura = 1 + std::max(alturaNodo(novoRaiz->filhoEsquerda), alturaNodo(novoRaiz->filhoDireita));
+        nodo->altura = 1 + std::max(alturaNodo(nodo->filhoEsquerda), alturaNodo(nodo->filhoDireita)); // atualiza a altura do nodo
+        novoRaiz->altura = 1 + std::max(alturaNodo(novoRaiz->filhoEsquerda), alturaNodo(novoRaiz->filhoDireita)); // atualiza a altura da nova raiz
 
-        return novoRaiz;
+        return novoRaiz; 
     }
 
     Nodo<T>* rotacaoDireita(Nodo<T>* nodo)
     {
-        Nodo<T>* novaRaiz = nodo->filhoEsquerda;
-        Nodo<T>* tmp = novaRaiz->filhoDireita;
-        novaRaiz->filhoDireita = nodo;
-        nodo->filhoEsquerda = tmp;
+        //TODO VERIFICAR SE ESTA CERTO
+        Nodo<T>* novaRaiz = nodo->filhoEsquerda; // nova raiz
+        Nodo<T>* tmp = novaRaiz->filhoDireita; // subarvore direita da nova raiz
+        novaRaiz->filhoDireita = nodo; // nodo vira filho direita da nova raiz
+        nodo->filhoEsquerda = tmp; // subarvore direita da nova raiz vira filho esquerda do nodo
 
-        nodo->altura = 1 + std::max(alturaNodo(nodo->filhoEsquerda), alturaNodo(nodo->filhoDireita));
-        novaRaiz->altura = 1 + std::max(alturaNodo(novaRaiz->filhoEsquerda), alturaNodo(novaRaiz->filhoDireita));
+        nodo->altura = 1 + std::max(alturaNodo(nodo->filhoEsquerda), alturaNodo(nodo->filhoDireita)); // atualiza a altura do nodo
+        novaRaiz->altura = 1 + std::max(alturaNodo(novaRaiz->filhoEsquerda), alturaNodo(novaRaiz->filhoDireita));// atualiza a altura da nova raiz
 
         return novaRaiz;
     }

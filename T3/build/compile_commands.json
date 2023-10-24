@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/home/nico/dev/UFSC/datastructureclass/T3/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/nico/dev/UFSC/datastructureclass/T3/main.cpp",
-  "file": "/home/nico/dev/UFSC/datastructureclass/T3/main.cpp"
+  "directory": "/home/nicolas/Documentos/datastructureclass/T3/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/nicolas/Documentos/datastructureclass/T3/main.cpp",
+  "file": "/home/nicolas/Documentos/datastructureclass/T3/main.cpp"
 }
 ]

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nico/dev/UFSC/datastructureclass/T3
+CMAKE_SOURCE_DIR = /home/nicolas/Documentos/datastructureclass/T3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nico/dev/UFSC/datastructureclass/T3/build
+CMAKE_BINARY_DIR = /home/nicolas/Documentos/datastructureclass/T3/build
 
 # Utility rule file for ExperimentalSubmit.
 
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalSubmit.dir/clean:
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/clean
 
 CMakeFiles/ExperimentalSubmit.dir/depend:
-	cd /home/nico/dev/UFSC/datastructureclass/T3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nico/dev/UFSC/datastructureclass/T3 /home/nico/dev/UFSC/datastructureclass/T3 /home/nico/dev/UFSC/datastructureclass/T3/build /home/nico/dev/UFSC/datastructureclass/T3/build /home/nico/dev/UFSC/datastructureclass/T3/build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nicolas/Documentos/datastructureclass/T3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolas/Documentos/datastructureclass/T3 /home/nicolas/Documentos/datastructureclass/T3 /home/nicolas/Documentos/datastructureclass/T3/build /home/nicolas/Documentos/datastructureclass/T3/build /home/nicolas/Documentos/datastructureclass/T3/build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/depend
 
